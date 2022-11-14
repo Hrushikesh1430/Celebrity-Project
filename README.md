@@ -1,4 +1,39 @@
-# Getting Started with Create React App
+# Project Title
+
+Course Manager
+
+## Demo link:
+
+Preview link - https://resplendent-sunflower-68b4e6.netlify.app
+
+## Table of Content:
+
+- [About The App](#about-the-app)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Approach](#approach)
+- [Setup](#setup)
+
+## About The App
+
+CourseManager is an app that helps to track the course goals for an user.
+The user can delete the course if the goal is achieved or can add a new course to the course list.
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/61748949/201510266-61cfad12-b5ce-4398-933c-db1d4e949a79.png)
+
+## Technologies
+
+I used HTML5,CSS3,Javascript and ReactJS to achieve the full functionality of the project.
+
+## Approach
+
+This project focuses on implementation of react hook useState and dynamically assigning styles based on the current state of the components.
+
+## Setup
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
