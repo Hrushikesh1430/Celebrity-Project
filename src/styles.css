@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+}
+
+.card {
+    width: 500px;
+
+
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.arrow :hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.picture {
+    border-radius: 50px;
+    width: 65px;
+}
+
+
+.title-descrip {
+    color: #A9A9A9;
+    font-size: 17px;
+
+}
+
+.title-content {
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.main-title {
+    font-size: 20px;
+}
+
+.modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.modalContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.delete {
+    color: #ffffff;
+    background-color: orangered;
+}
+
+.delete :hover {
+    background-color: orangered;
+}
+
+.error {
+    border: 1px solid red;
+    box-shadow: 0 0 0 .10rem rgba(244, 3, 23, 0.25)
+}
+
+.disabled {
+    border-color: transparent;
+}
+
+.enabled {
+    padding: "4px";
+    color: "red";
+    border-radius: "20px";
+    border: "2px solid green";
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+}
