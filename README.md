@@ -1,10 +1,10 @@
 # Project Title
 
-Course Manager
+Celebrity Project
 
 ## Demo link:
 
-Preview link - https://resplendent-sunflower-68b4e6.netlify.app
+Preview link - https://celebrityproject.netlify.app/
 
 ## Table of Content:
 
@@ -16,12 +16,17 @@ Preview link - https://resplendent-sunflower-68b4e6.netlify.app
 
 ## About The App
 
-CourseManager is an app that helps to track the course goals for an user.
-The user can delete the course if the goal is achieved or can add a new course to the course list.
+This app loads data from a json file and allows you to edit and delete the contents of each celebrity.
 
 ## Screenshots
+![image](https://user-images.githubusercontent.com/61748949/201628876-0304ef1c-c75d-4691-bf83-7cd022818fa7.png)
 
-![image](https://user-images.githubusercontent.com/61748949/201510266-61cfad12-b5ce-4398-933c-db1d4e949a79.png)
+![image](https://user-images.githubusercontent.com/61748949/201628931-19268769-0bcc-4cba-9cb4-6d7c9d9ef2fd.png)
+
+![image](https://user-images.githubusercontent.com/61748949/201629128-60a35bbf-6931-4974-a6e1-0498e15408f7.png)
+
+![image](https://user-images.githubusercontent.com/61748949/201629250-6e629c89-c5fb-46e5-b42b-10a5d3549b42.png)
+
 
 ## Technologies
 
@@ -29,8 +34,34 @@ I used HTML5,CSS3,Javascript and ReactJS to achieve the full functionality of th
 
 ## Approach
 
-This project focuses on implementation of react hook useState and dynamically assigning styles based on the current state of the components.
+The following functionalities are achieved in this app:
 
+1. The user list item is an accordion,
+
+   - when clicked on, it will cause all the other accordions to collapse and enlarge the one which was clicked.
+   - If clicked on the same one it will collapse.
+   - Manage the + and - icons in open or collapsed mode (collapsed = - | open = +)
+
+2. Fetching the JSON file provided to fill the list of users. 
+
+   - I have calculated the age of the user based on the date of birth provided
+
+3. Provided buttons to edit or delete
+
+   - edit mode will let you edit the details of the user in the exact place
+   - you can only edit the user if the user is an adult
+   - validations implemented where a user cannot
+     -- input text in the age field
+     -- input numbers in the nationality
+     -- keep anything empty
+   - when in edit mode you can either save or cancel
+     -- save button will be disabled by default and will enable only if the details have changed
+     -- save click will update the user's details
+     -- cancel will revert the details to their last known state
+     -- you cannot open another accordion while in edit mode
+   - delete mode should alert you if you actually want to delete the user
+     -- if yes - the user will be deleted
+     -- if no - do nothing
 ## Setup
 
 ## Getting Started with Create React App
