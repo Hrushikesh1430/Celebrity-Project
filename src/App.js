@@ -2,8 +2,6 @@ import React from "react";
 import { useState } from "react";
 import records from "./data/celebrities.json";
 import Accordion from "./components/Accordion";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
 import Modal from "./components/Modal";
 
 const App = () => {
@@ -40,7 +38,6 @@ const App = () => {
         return obj;
       })
     );
-    // console.log(recordlist);
   };
   const deleteItem = (id) => {
     setIsOpened(null);
@@ -54,27 +51,28 @@ const App = () => {
   const reset = () => {
     setIsDelete(false);
   };
-
-  <React.Fragment>
-    {isDelete && (
-      <Modal
-        closeModal={reset}
-        selected={deletecheck}
-        items={records}
-        onSelect={deleteItem}
-      />
-    )}
-    <h2 className="text-center p-4">List View</h2>
-    <Accordion
-      item={recordlist}
-      toggleshow={showcard}
-      opencheck={isOpened}
-      openDeleteModal={openModal}
-      EditCheck={editcard}
-      EditVal={isEdit}
-      EditHandler={saveEditData}
-    ></Accordion>
-  </React.Fragment>;
+  return (
+    <React.Fragment>
+      {isDelete && (
+        <Modal
+          closeModal={reset}
+          selected={deletecheck}
+          items={records}
+          onSelect={deleteItem}
+        />
+      )}
+      <h2 className="text-center p-4">List View</h2>
+      <Accordion
+        item={recordlist}
+        toggleshow={showcard}
+        opencheck={isOpened}
+        openDeleteModal={openModal}
+        EditCheck={editcard}
+        EditVal={isEdit}
+        EditHandler={saveEditData}
+      ></Accordion>
+    </React.Fragment>
+  );
 };
 
 export default App;
