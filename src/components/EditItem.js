@@ -14,7 +14,6 @@ const EditItem = (props) => {
   // const [isValid, setIsValid] = useState(true);
   const [updatedData, setUpdatedData] = useState(props.user);
   const letters = /^[a-zA-Z]*$/;
-  const numbers = /^[0-9]+$/;
   const countryHandler = (event) => {
     // if (!event.target.value.match(letters)) {
     //   setIsValid(false);

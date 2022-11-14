@@ -8,7 +8,6 @@ const Accordion = (props) => {
     let temp = string.charAt(0).toUpperCase() + string.slice(1);
     return temp;
   };
-  var temp_age = null;
   return (
     <React.Fragment>
       {props.item.map((items, i) => (
